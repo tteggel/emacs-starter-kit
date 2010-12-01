@@ -8,7 +8,7 @@
         (sequence "DELEGATED(o!@)" "|" "DONE(d!)")
         ( sequence "|" "CANCELLED(c!)")))
 (setq org-drawers '(  "PROPERTIES" "LOGBOOK"))
-(org-indent-mode)
+;(org-indent-mode)
 (setq org-mobile-directory "~/Dropbox/org")
 
 ;undo-tree
@@ -17,6 +17,7 @@
 
 ;flymake-jslint
 (require 'flymake-jslint)
-     (add-hook 'javascript-mode-hook
-         (lambda () (flymake-mode t)))
+(lintnode-start)
+(add-hook 'js-mode-hook
+    (lambda () (flymake-mode t)))
 
